@@ -18,7 +18,7 @@ void seqCalculateSystem(System s) {
 }
 
 void parCalculateSystem(System s) {
-	#pragma omp parallel
+	#pragma omp parallel sections
 	{
 		#pragma omp section
 		{

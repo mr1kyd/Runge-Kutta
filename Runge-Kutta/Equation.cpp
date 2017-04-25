@@ -43,5 +43,7 @@ void calculateEquation(Equation e, double r) {
 		double x4 = e.dt * f1(m[i] + e.dt * x3);
 		x[i + 1] = x[i] + e.dt * (x1 + 2 * x2 + 2 * x3 + x4) / 6.0;
 	}
+	free(m);
+	free(x);
 	e.result = x;
 }
