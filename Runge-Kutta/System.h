@@ -6,8 +6,10 @@ typedef struct System
 	Equation x;
 	Equation y;
 	Equation z;
+	double r;
 };
 
 System createSystem();
 
-System createSystem(Equation x, Equation y, Equation z);
+void seqCalculateSystem(System s);
+void parCalculateSystem(System s);
